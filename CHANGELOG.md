@@ -1,3 +1,8 @@
+## [0.0.4] - 12.04.2021
+
+* Null safety
+* File formatting
+
 ## [0.0.3+1] - 12.04.2021
 
 * Altered readme
