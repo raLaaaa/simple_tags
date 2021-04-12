@@ -1,3 +1,7 @@
+## [0.0.3+1] - 12.04.2021
+
+* Altered readme
+
 ## [0.0.3] - 12.04.2021
 
 * Removed author and improved description
