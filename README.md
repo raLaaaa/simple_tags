@@ -1,6 +1,6 @@
 # simple_tags
 
-[![pub package](https://img.shields.io/pub/v/url_launcher.svg)](https://pub.dev/packages/simple_tags)
+[![pub package](https://img.shields.io/pub/v/simple_tags.svg)](https://pub.dev/packages/simple_tags)
 
 A Flutter plugin for displaying simple string based tags inside a wrap.
 The plugin is kept extremely simple and straight forward.
