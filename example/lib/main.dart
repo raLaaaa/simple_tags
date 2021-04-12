@@ -53,9 +53,9 @@ class _SimpleTagExampleState extends State<SimpleTagExample> {
         onTagPress: (tag) {print('pressed $tag');},
         onTagLongPress: (tag) {print('long pressed $tag');},
         onTagDoubleTap: (tag) {print('double tapped $tag');},
-        tagContainerPadding: EdgeInsets.all(4),
+        tagContainerPadding: EdgeInsets.all(6),
         tagTextStyle: TextStyle(color: Colors.deepPurple),
-        tagIcon: Icon(Icons.add, size: 12),
+        tagIcon: Icon(Icons.clear, size: 12),
         tagContainerDecoration: BoxDecoration(
           color: Colors.white,
           border: Border.all(color: Colors.grey),

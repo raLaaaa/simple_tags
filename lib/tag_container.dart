@@ -5,6 +5,13 @@ class TagContainer extends StatefulWidget {
   final EdgeInsets tagContainerPadding;
   final EdgeInsets tagContainerMargin;
   final TextStyle tagTextStyle;
+
+  final int tagTextMaxLines;
+  final TextOverflow tagTextOverflow;
+  final TextAlign tagTextAlign;
+  final bool tagTextSoftWrap;
+  final Locale tagTextLocale;
+
   final GestureTapCallback onPressed;
   final GestureTapCallback onLongPressed;
   final GestureTapCallback onDoubleTap;
@@ -18,9 +25,16 @@ class TagContainer extends StatefulWidget {
         this.onDoubleTap,
         this.onLongPressed,
         this.tagIcon,
-        this.tagContainerMargin ,
+        this.tagContainerMargin,
         this.tagContainerPadding,
         this.tagTextStyle,
+
+        this.tagTextMaxLines,
+        this.tagTextOverflow,
+        this.tagTextAlign,
+        this.tagTextLocale,
+        this.tagTextSoftWrap,
+
         this.tagContainerDecoration})
       : super(key: key);
 
@@ -68,7 +82,7 @@ class _TagContainerState extends State<TagContainer>
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(widget.tag, style: widget.tagTextStyle,),
+              Text(widget.tag, style: widget.tagTextStyle, maxLines: widget.tagTextMaxLines, overflow: widget.tagTextOverflow, textAlign: widget.tagTextAlign, softWrap: widget.tagTextSoftWrap, locale: widget.tagTextLocale,),
               widget.tagIcon != null ? widget.tagIcon : SizedBox()
             ],
           ),
