@@ -70,7 +70,7 @@ class _SimpleTagExampleState extends State<SimpleTagExample> {
               offset: Offset(1.75, 3.5), // c
             )
           ],
-        ), // This trailing comma makes auto-formatting nicer for build methods.
+        ),
       ),
     );
   }
