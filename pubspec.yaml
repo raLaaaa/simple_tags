@@ -1,6 +1,6 @@
 name: simple_tags
 description: A simple package to display text based tags in a wrap which a fully customizable and stylable. You can customize the tag container as well as the tag itself.
-version: 0.0.2
+version: 0.0.3
 author: Marcel Schepaniak<marcel.schepaniak@taliox.io>
 homepage: https://github.com/raLaaaa/simple_tags
 
