@@ -1,8 +1,8 @@
 name: simple_tags
-description: A new Flutter package project.
+description: A simple package to display text based tags in a wrap
 version: 0.0.1
-author:
-homepage:
+author: Marcel Schepaniak<marcel.schepaniak@taliox.io>
+homepage: https://github.com/raLaaaa/simple_tags
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
