@@ -5,7 +5,10 @@ import 'package:simple_tags/tag_container.dart';
 
 class SimpleTags extends StatelessWidget {
   final List<String> content;
-  final GestureTapCallback onTagPress;
+
+  final Function(String) onTagPress;
+  final Function(String) onTagDoubleTap;
+  final Function(String) onTagLongPress;
 
   final BoxDecoration tagContainerDecoration;
   final Widget tagIcon;
@@ -27,6 +30,8 @@ class SimpleTags extends StatelessWidget {
       {Key key,
       @required this.content,
       this.onTagPress,
+      this.onTagDoubleTap,
+      this.onTagLongPress,
       this.tagContainerDecoration,
       this.tagIcon,
       this.tagContainerPadding = EdgeInsets.zero,
@@ -62,15 +67,29 @@ class SimpleTags extends StatelessWidget {
     List<Widget> toReturn = [];
 
     if (content.isNotEmpty) {
-      content.forEach((element) {
+      content.forEach((tag) {
         toReturn.add(TagContainer(
-          tag: element,
+          tag: tag,
           tagContainerDecoration: tagContainerDecoration,
           tagContainerMargin: tagContainerMargin,
           tagContainerPadding: tagContainerPadding,
           tagIcon: tagIcon,
           tagTextStyle: tagTextStyle,
-          onPressed: () {},
+          onPressed: () {
+            if (onTagPress != null) {
+              onTagPress(tag);
+            }
+          },
+          onLongPressed: () {
+            if (onTagLongPress != null) {
+              onTagLongPress(tag);
+            }
+          },
+          onDoubleTap: () {
+            if (onTagDoubleTap != null) {
+              onTagDoubleTap(tag);
+            }
+          },
         ));
       });
     }

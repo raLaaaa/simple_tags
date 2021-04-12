@@ -6,6 +6,8 @@ class TagContainer extends StatefulWidget {
   final EdgeInsets tagContainerMargin;
   final TextStyle tagTextStyle;
   final GestureTapCallback onPressed;
+  final GestureTapCallback onLongPressed;
+  final GestureTapCallback onDoubleTap;
   final Icon tagIcon;
   final BoxDecoration tagContainerDecoration;
 
@@ -13,6 +15,8 @@ class TagContainer extends StatefulWidget {
       {Key key,
         @required this.tag,
         this.onPressed,
+        this.onDoubleTap,
+        this.onLongPressed,
         this.tagIcon,
         this.tagContainerMargin ,
         this.tagContainerPadding,
@@ -54,6 +58,8 @@ class _TagContainerState extends State<TagContainer>
       opacity: _animation,
       child: GestureDetector(
         onTap: widget.onPressed,
+        onDoubleTap: widget.onDoubleTap,
+        onLongPress: widget.onLongPressed,
         child: Container(
           margin: widget.tagContainerMargin,
           padding: widget.tagContainerPadding,
