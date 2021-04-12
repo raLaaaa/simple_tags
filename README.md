@@ -8,6 +8,11 @@ The plugin is kept extremely simple and straight forward.
 ## Usage
 To use this plugin, add `simple_tags` as a [dependency in your pubspec.yaml file](https://flutter.dev/platform-plugins/).
 
+```
+dependencies:
+  simple_tags: "0.0.2"
+```
+
 ### Example
 
 You can specify the `content` of `SimpleTags` by injecting a list of strings.
