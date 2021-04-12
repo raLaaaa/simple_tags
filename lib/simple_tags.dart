@@ -8,18 +8,20 @@ class SimpleTags extends StatelessWidget {
   final List<String> content;
 
   /// Function which gets called by pressing on a tag.
-  final Function(String) onTagPress;
+  final Function(String)? onTagPress;
+
   /// Function which gets called by a double tap on a tag.
-  final Function(String) onTagDoubleTap;
+  final Function(String)? onTagDoubleTap;
+
   /// Function which gets called by a long press on a tag.
-  final Function(String) onTagLongPress;
+  final Function(String)? onTagLongPress;
 
   /// Specifies the decoration for the tag container.
-  final BoxDecoration tagContainerDecoration;
+  final BoxDecoration? tagContainerDecoration;
 
   /// Specifies whether there is a trailing widget inside the tag container.
   /// If this is `null` no widget will be displayed.
-  final Widget tagIcon;
+  final Widget? tagIcon;
 
   /// Specifies the padding of the tag container.
   final EdgeInsets tagContainerPadding;
@@ -28,22 +30,22 @@ class SimpleTags extends StatelessWidget {
   final EdgeInsets tagContainerMargin;
 
   /// Specifies the Textstyle widget for the tag.
-  final TextStyle tagTextStyle;
+  final TextStyle? tagTextStyle;
 
   /// Specifies the max lines for the tag text.
-  final int tagTextMaxlines;
+  final int? tagTextMaxlines;
 
   /// Specifies the overflow for the tag text.
-  final TextOverflow tagTextOverflow;
+  final TextOverflow? tagTextOverflow;
 
   /// Specifies the text align for the tag text.
-  final TextAlign tagTextAlign;
+  final TextAlign? tagTextAlign;
 
   /// Specifies the softwrapping for the tag text.
-  final bool tagTextSoftWrap;
+  final bool? tagTextSoftWrap;
 
   /// Specifies the locale for the tag text.
-  final Locale tagTextLocale;
+  final Locale? tagTextLocale;
 
   /// See `WrapCrossAlignment`
   final WrapCrossAlignment wrapCrossAxisAlignment;
@@ -64,7 +66,7 @@ class SimpleTags extends StatelessWidget {
   final Axis wrapDirection;
 
   /// See `TextDirection`
-  final TextDirection wrapTextDirection;
+  final TextDirection? wrapTextDirection;
 
   /// See `Clip`
   final Clip wrapClipBehavior;
@@ -73,8 +75,8 @@ class SimpleTags extends StatelessWidget {
   final VerticalDirection wrapVerticalDirection;
 
   SimpleTags(
-      {Key key,
-      @required this.content,
+      {Key? key,
+      required this.content,
       this.onTagPress,
       this.onTagDoubleTap,
       this.onTagLongPress,
@@ -124,7 +126,7 @@ class SimpleTags extends StatelessWidget {
           tagContainerDecoration: tagContainerDecoration,
           tagContainerMargin: tagContainerMargin,
           tagContainerPadding: tagContainerPadding,
-          tagIcon: tagIcon,
+          tagIcon: tagIcon as Icon?,
           tagTextStyle: tagTextStyle,
           tagTextAlign: tagTextAlign,
           tagTextLocale: tagTextLocale,
@@ -133,17 +135,17 @@ class SimpleTags extends StatelessWidget {
           tagTextSoftWrap: tagTextSoftWrap,
           onPressed: () {
             if (onTagPress != null) {
-              onTagPress(tag);
+              onTagPress!(tag);
             }
           },
           onLongPressed: () {
             if (onTagLongPress != null) {
-              onTagLongPress(tag);
+              onTagLongPress!(tag);
             }
           },
           onDoubleTap: () {
             if (onTagDoubleTap != null) {
-              onTagDoubleTap(tag);
+              onTagDoubleTap!(tag);
             }
           },
         ));

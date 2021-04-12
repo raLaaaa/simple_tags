@@ -1,10 +1,10 @@
 name: simple_tags
 description: A simple package to display text based tags in a wrap which a fully customizable and stylable. You can customize the tag container as well as the tag itself.
-version: 0.0.3+1
+version: 0.0.4
 homepage: https://github.com/raLaaaa/simple_tags
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
   flutter: ">=1.17.0"
 
 dependencies:
