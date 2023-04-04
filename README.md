@@ -36,6 +36,7 @@ class SimpleTagExample extends StatefulWidget {
     'Cherries',
     'Date Fruit',
     'A Fruit with a really long name',
+    'A Fruit with a really, really, really, really, very, very, very, very long name',
     'Durian',
     'Grapefruit'
   ];
