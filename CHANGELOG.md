@@ -1,3 +1,7 @@
+## [0.0.6] - 04.04.2023
+
+* Added missing android exported flag for Android 12 and higher
+
 ## [0.0.5] - 04.04.2023
 
 * Fixed a bug where too long tag content lead to an overflow
