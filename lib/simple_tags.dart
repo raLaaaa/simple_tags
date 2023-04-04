@@ -121,6 +121,7 @@ class SimpleTags extends StatelessWidget {
 
     if (content.isNotEmpty) {
       content.forEach((tag) {
+        print(tag);
         toReturn.add(TagContainer(
           tag: tag,
           tagContainerDecoration: tagContainerDecoration,

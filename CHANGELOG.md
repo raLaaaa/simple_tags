@@ -1,3 +1,7 @@
+## [0.0.5] - 04.04.2023
+
+* Fixed a bug where too long tag content lead to an overflow
+
 ## [0.0.4] - 12.04.2021
 
 * Null safety

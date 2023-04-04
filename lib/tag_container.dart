@@ -80,14 +80,16 @@ class _TagContainerState extends State<TagContainer>
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text(
-                widget.tag,
-                style: widget.tagTextStyle,
-                maxLines: widget.tagTextMaxLines,
-                overflow: widget.tagTextOverflow,
-                textAlign: widget.tagTextAlign,
-                softWrap: widget.tagTextSoftWrap,
-                locale: widget.tagTextLocale,
+              Flexible(
+                child: Text(
+                  widget.tag,
+                  style: widget.tagTextStyle,
+                  maxLines: widget.tagTextMaxLines,
+                  overflow: widget.tagTextOverflow,
+                  textAlign: widget.tagTextAlign,
+                  softWrap: widget.tagTextSoftWrap,
+                  locale: widget.tagTextLocale,
+                ),
               ),
               widget.tagIcon != null ? widget.tagIcon! : SizedBox()
             ],
