@@ -10,7 +10,7 @@ To use this plugin, add `simple_tags` as a [dependency in your pubspec.yaml file
 
 ```
 dependencies:
-  simple_tags: "0.0.4"
+  simple_tags: "0.0.5"
 ```
 
 ### Example
@@ -83,7 +83,7 @@ class _SimpleTagExampleState extends State<SimpleTagExample> {
 }
 ```
 
-![image](https://user-images.githubusercontent.com/12799722/114385355-3a430a00-9b90-11eb-9136-f4fab5294290.png)
+![image](https://user-images.githubusercontent.com/12799722/229825332-17ed2ef6-080a-43ec-a481-5528f553e47a.png)
 
 ## Contributing
 Thanks for your interest! Do not hesitate to open an issue if you have a question, feedback or found something that is not working like it should.
