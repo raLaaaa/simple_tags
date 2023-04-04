@@ -83,7 +83,7 @@ class _SimpleTagExampleState extends State<SimpleTagExample> {
 }
 ```
 
-![image](https://user-images.githubusercontent.com/12799722/229824888-dee6d4a7-2eb3-4b83-b700-bcb6c304f19e.png)
+![image](https://user-images.githubusercontent.com/12799722/229825332-17ed2ef6-080a-43ec-a481-5528f553e47a.png)
 
 ## Contributing
 Thanks for your interest! Do not hesitate to open an issue if you have a question, feedback or found something that is not working like it should.
