@@ -1,6 +1,9 @@
 # simple_tags
 
+[![Flutter](https://img.shields.io/badge/Made%20with-Flutter-blue.svg)](https://flutter.dev/)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 [![pub package](https://img.shields.io/pub/v/simple_tags.svg)](https://pub.dev/packages/simple_tags)
+[![pub points](https://img.shields.io/pub/points/simple_tags?logo=dart)](https://pub.dev/packages/simple_tags/score)
 
 A Flutter plugin for displaying simple string based tags inside a wrap.
 The plugin is kept extremely simple and straight forward.
