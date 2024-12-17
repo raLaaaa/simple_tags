@@ -1,5 +1,5 @@
 name: simple_tags
-description: A simple package to display text based tags in a wrap which a fully customizable and stylable. You can customize the tag container as well as the tag itself.
+description: A simple package to display text based tags in a wrap. Fully customizable and stylable.
 version: 0.0.6
 homepage: https://github.com/raLaaaa/simple_tags
 
